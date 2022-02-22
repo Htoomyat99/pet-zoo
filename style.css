@@ -14,7 +14,7 @@ body, button {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    box-shadow: 1px 1px #E7E9EB;
+    box-shadow: 3px 3px #E7E9EB;
 }
 
 .header {
@@ -31,10 +31,11 @@ body, button {
     color: black;
 }
 
-.header a:hover , .dropdown:hover .dropbtn, .dropdown-content a:hover {
-    background-color: lightseagreen;
+.header a:hover , .dropdown-content a:hover, .dropdown .dropbtn:hover {
+    background-color: #B36B39;
     color: white;
     transition: all ease 0.3s;
+    border-radius: 2px;
 }
 
 .dropdown .dropbtn {
@@ -57,7 +58,6 @@ body, button {
 }
   
 .dropdown-content a {
-    float: none;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
@@ -68,3 +68,152 @@ body, button {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+.welcome {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.welcome div {
+    width: 45%;
+}
+
+.welcomeText h1 {
+    color: #B36B39;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.welcomeText p {
+    line-height: 40px;
+    color: #333;
+}
+
+.welcomeText button {
+    padding: 10px;
+    color: #333;
+    font-weight: bold;
+    font-size: 0.96rem;
+    border: 3px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.welcomeText button:hover {
+    background-color: #B36B39;
+    color: white;
+}
+
+.activity {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.activity > div {
+    width: 25%;
+}
+
+.activity img {
+    border-radius: 25px;
+}
+
+.activityText {
+    margin-left: 40px;
+}
+
+span {
+    color: #B36B39;
+}
+
+.activityText p {
+    color: #333;
+}
+
+.activityBox {
+    display: flex;
+    justify-content: center;
+}
+
+.activityBox > div {
+    width: 40%;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 0px 7px;
+}
+
+.activityBox div b {
+    color: white;
+}
+
+.activityBox div p {
+    color: white;
+    font-size: 0.8rem;
+}
+
+.celePet {
+    background-color: #B36B39;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.celePet div {
+    width: 15%;
+    margin: 80px 35px;  
+}
+
+.celePet div img {
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.celePet div h1 {
+    color: white;
+    text-align: center;
+}
+
+.celePet div p {
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    text-align: right;
+    margin: 70px;
+}
+
+.aboutText {
+    width: 25%;
+}
+
+.aboutImage {
+    width: 40%;
+}
+
+.about div h4 {
+    color: #777;
+}
+
+.about div p {
+    font-size: 0.8rem;
+    color: #777;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+}
+
+.gallery div {
+    width: 20%;
+    margin: 3px 6px;
+}
+
+
+
