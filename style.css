@@ -3,18 +3,28 @@ body {
     padding: 0;
 }
 
-body, button {
+body, button, input, textarea {
     font-family: cursive;
 }
 
 .navbar {
     background-color: white;
-    height: 50px;
+    height: 60px;
+    width: 100%;
     font-weight: 600;
     display: flex;
     justify-content: space-around;
     align-items: center;
     box-shadow: 3px 3px #E7E9EB;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.navbar img {
+    width: 30px;
+    height: 30px;
 }
 
 .header {
@@ -50,7 +60,7 @@ body, button {
 
 .dropdown-content {
     display: none;
-    position: absolute;
+    position: fixed;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -72,17 +82,17 @@ body, button {
 .welcome {
     display: flex;
     justify-content: center;
-    margin-top: 70px;
+    margin-top: 150px;
 }
 
 .welcome div {
-    width: 45%;
+    width: 40%;
 }
 
 .welcomeText h1 {
     color: #B36B39;
     font-weight: bold;
-    font-size: 1.6rem;
+    font-size: 2rem;
 }
 
 .welcomeText p {
@@ -90,8 +100,8 @@ body, button {
     color: #333;
 }
 
-.welcomeText button {
-    padding: 10px;
+.welcomeText button , .form button {
+    padding: 8px;
     color: #333;
     font-weight: bold;
     font-size: 0.96rem;
@@ -100,7 +110,7 @@ body, button {
     cursor: pointer;
 }
 
-.welcomeText button:hover {
+.welcomeText button:hover , .form button:hover {
     background-color: #B36B39;
     color: white;
 }
@@ -108,7 +118,7 @@ body, button {
 .activity {
     display: flex;
     justify-content: center;
-    margin-top: 70px;
+    margin-top: 100px;
 }
 
 .activity > div {
@@ -121,6 +131,7 @@ body, button {
 
 .activityText {
     margin-left: 40px;
+
 }
 
 span {
@@ -157,7 +168,7 @@ span {
     background-color: #B36B39;
     display: flex;
     justify-content: center;
-    margin-top: 70px;
+    margin-top: 90px;
 }
 
 .celePet div {
@@ -185,7 +196,7 @@ span {
     display: flex;
     justify-content: center;
     text-align: right;
-    margin: 70px;
+    margin: 90px;
 }
 
 .aboutText {
@@ -211,9 +222,57 @@ span {
 }
 
 .gallery div {
-    width: 20%;
-    margin: 3px 6px;
+    width: 18%;
+    margin: 1.5px 3px;
 }
 
+.contact {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+.map {
+    width: 70%;
+}
+
+.form {
+    width: 30%;
+}
+
+.form input {
+    padding: 7px 150px 7px 5px;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+.form textarea {
+    padding: 5px;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.topBtn {
+    font-size: 2rem;
+    height: 35px;
+    width: 35px;
+    color: white;
+    background-color: #333;
+    border: 3px solid #777;
+    border-radius: 7px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;    
+}
+
+footer {
+    padding: 50px;
+    background-color: #B36B39;
+    color: white;
+    font-size: 0.75rem;
+    text-align: center;
+    margin-top: 2px;
+}
 
 

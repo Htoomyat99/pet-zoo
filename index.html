@@ -7,60 +7,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
     <section>
         <div class="navbar">
-            <div style="padding: 10px; margin-left: 30px;">Pets-zoo</div>
+            <div style="padding: 10px; margin-left: 100px;">
+                <img src="images/logo.jpg" alt="pet-zoo-logo" width="100%">
+                Pets-zoo
+            </div>
             <div class="header">
                 <a href="">Home</a>
-                <a href="">Activity</a>
+                <a href="#activity">Activity</a>
                 <div class="dropdown">
                     <button class="dropbtn">Cele-Pets
                     </button>
                     <div class="dropdown-content">
-                        <a href="#">Wat Paw</a>
-                        <a href="#">Kyar Pauk</a>
-                        <a href="#">JumBo & Dumbo</a>
+                        <a href="#cele">Wat Paw</a>
+                        <a href="#cele">Kyar Pauk</a>
+                        <a href="#cele">JumBo & Dumbo</a>
                     </div>
                 </div>
-                <a href="">About</a>
-                <a href="">Gallery</a>
-                <a href="">Contact</a>
+                <a href="#about">About</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
             </div>
             <div style="width: 40%;"></div>
         </div>
     </section>
 
     <section>
-        <div class="welcome">
+        <div class="welcome" id="welcome">
             <div class="welcomeText">
-                <h1>Welcome to My Pets-zoo</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nesciunt delectus eaque nisi
+                <h1 data-aos="fade-right" data-aos-duration="1000">Welcome to My Pets-zoo</h1>
+                <p data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Doloremque, nesciunt delectus eaque nisi
                     quam assumenda. Unde eos aperiam velit perspiciatis odit pariatur vitae temporibus quo fugit?
                     Adipisci quae sed praesentium! quam assumenda.
                 </p>
-                <button>See more</button>
-                <button>Go shop</button>
+                <button data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1000">See more</button>
+                <button data-aos="fade-left" data-aos-delay="1300" data-aos-duration="1000">Go shop</button>
             </div>
             <div>
-                <img src="images/dogfamily.jpg" alt="dogfamily" width="100%">
+                <img src="images/dogfamily.jpg" alt="dogfamily" width="100%" data-aos="fade-left"
+                    data-aos-duration="3000">
             </div>
         </div>
 
-        <div class="activity">
-            <div><img src="images/dog1.jpg" alt="dog1" width="100%"></div>
-            <div class="activityText">
+        <div class="activity" id="activity">
+            <div><img src="images/dog1.jpg" alt="dog1" width="100%" data-aos="zoom-in" data-aos-duration="1000"></div>
+            <div class="activityText" data-aos="fade-left" data-aos-duration="1000">
                 <h1>Lorem ipsum, sitcy <span>dolor amet</span></h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At harum voluptatem pariatur repellat.
                     Neque, inventore? Impedit est doloremque qui nobis ea, rem rerum </p>
                 <div class="activityBox">
-                    <div>
+                    <div data-aos="zoom-in-right" data-aos-duration="1000">
                         <b>Lorem ipsum</b>
                         <p>Lorem ipsum dolor sit amet consectetur.</p>
                     </div>
-                    <div>
+                    <div data-aos="fade-left" data-aos-duration="1000">
                         <b>Lorem ipsum</b>
                         <p>Lorem ipsum dolor sit amet consectetur.</p>
                     </div>
@@ -68,27 +74,27 @@
             </div>
         </div>
 
-        <h1 style="margin-top: 70px; text-align: center; font-size: 1.6rem;">Cele Pets</h1>
+        <h1 style="margin-top: 90px; text-align: center; font-size: 2rem;" id="cele">Cele Pets</h1>
         <div class="celePet">
-            <div>
+            <div data-aos="fade-right" data-aos-duration="1000">
                 <img src="images/celepet1.jpg" alt="celepet1" width="100%">
                 <h1>Kyar Pauk</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, asperiores nam numquam Amet atque,
                     exvel modi elit.</p>
             </div>
-            <div>
+            <div data-aos="fade-right" data-aos-duration="1000">
                 <img src="images/celepet2.jpg" alt="celepet2" width="100%">
                 <h1>Wat Paw</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, asperiores nam numquam Amet atque,
                     exvel modi elit.</p>
             </div>
-            <div>
+            <div data-aos="fade-left" data-aos-duration="1000">
                 <img src="images/celepet3.jpg" alt="celepet3" width="100%">
                 <h1>Dumbo</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, asperiores nam numquam Amet atque,
                     exvel modi elit.</p>
             </div>
-            <div>
+            <div data-aos="fade-left" data-aos-duration="1000">
                 <img src="images/celepet4.jpg" alt="celepet4" width="100%">
                 <h1>JumBo</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, asperiores nam numquam Amet atque,
@@ -96,9 +102,9 @@
             </div>
         </div>
 
-        <h1 style="text-align: center; margin-top: 80px; font-size: 1.6rem;">About Us</h1>
+        <h1 style="text-align: center; margin-top: 90px; font-size: 2rem;" id="about">About Us</h1>
         <div class="about">
-            <div class="aboutText">
+            <div class="aboutText" data-aos="fade-up-right" data-aos-duration="1500">
                 <h1>Lorem ipsum dolor <span>sit consectetur elit</span></h1>
                 <h4>Tempor</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing fugiat nisi illo perferendis magni.</p>
@@ -106,34 +112,74 @@
                 <p>Lorem ipsum dolor sit amet adipisicing elit. Iure necessitatibus pariatur nihil maiores. Aliquid
                     quos, dolore pariatur vel nulla earum et nam, nemo neque dolores quidem, sunt ut? Corporis.</p>
             </div>
-            <div class="aboutImage">
+            <div class="aboutImage" data-aos="fade-up-left" data-aos-duration="1500">
                 <img src="images/dogfamily2.jpg" alt="dogfamily2" width="100%">
             </div>
         </div>
 
-        <h1 style="text-align: center; margin-top: 80px; font-size: 1.6rem;">Gallery</h1>
-        <div class="gallery" style="margin-top: 70px;">
-            <div><img src="images/pet1.jpg" alt="pet1" width="100%" height="200px"></div>
-            <div><img src="images/pet2.jpg" alt="pet2" width="100%" height="200px"></div>
-            <div><img src="images/pet3.jpg" alt="pet3" width="100%" height="200px"></div>
+        <h1 style="text-align: center; margin-top: 90px; font-size: 2rem;" id="gallery">Gallery</h1>
+        <div class="gallery" style="margin-top: 90px;">
+            <div data-aos="zoom-in-right" data-aos-duration="500"><img src="images/pet1.jpg" alt="pet1" width="100%"
+                    height="180px"></div>
+            <div data-aos="zoom-in" data-aos-duration="500"><img src="images/pet2.jpg" alt="pet2" width="100%"
+                    height="180px"></div>
+            <div data-aos="zoom-in-left" data-aos-duration="500"><img src="images/pet3.jpg" alt="pet3" width="100%"
+                    height="180px"></div>
         </div>
         <div class="gallery">
-            <div><img src="images/pet4.jpg" alt="pet4" width="100%" height="200px"></div>
-            <div><img src="images/pet5.jpg" alt="pet5" width="100%" height="200px"></div>
-            <div><img src="images/pet6.jpg" alt="pet6" width="100%" height="200px"></div>
+            <div data-aos="zoom-out-right" data-aos-duration="500"><img src="images/pet4.jpg" alt="pet4" width="100%"
+                    height="180px"></div>
+            <div data-aos="zoom-in" data-aos-duration="500"><img src="images/pet5.jpg" alt="pet5" width="100%"
+                    height="180px"></div>
+            <div data-aos="zoom-out-left" data-aos-duration="500"><img src="images/pet6.jpg" alt="pet6" width="100%"
+                    height="180px"></div>
         </div>
         <div class="gallery">
-            <div><img src="images/pet7.jpg" alt="pet7" width="100%" height="200px"></div>
-            <div><img src="images/pet8.jpg" alt="pet8" width="100%" height="200px"></div>
-            <div><img src="images/pet8.jpg" alt="pet9" width="100%" height="200px"></div>
+            <div data-aos="zoom-out-right" data-aos-duration="500"><img src="images/pet7.jpg" alt="pet7" width="100%"
+                    height="180px"></div>
+            <div data-aos="zoom-in" data-aos-duration="500"><img src="images/pet8.jpg" alt="pet8" width="100%"
+                    height="180px"></div>
+            <div data-aos="zoom-out-left" data-aos-duration="500"><img src="images/pet9.jpg" alt="pet9" width="100%"
+                    height="180px"></div>
         </div>
 
-        <h1 style="text-align: center; margin-top: 80px; font-size: 1.6rem;">Contact Us</h1>
+        <h1 style="text-align: center; margin-top: 90px; font-size: 2rem;" id="contact">Contact Us</h1>
         <div class="contact">
-            <div class="map"></div>
-            <div class="form"></div>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63818.543661410054!2d103.80629367621046!3d1.3812658641421833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da13d9102adcaf%3A0xb414fac8a43b1b91!2sSingapore%20Zoo!5e0!3m2!1sen!2ssg!4v1645885648618!5m2!1sen!2ssg"
+                    width="98%" height="430" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="form">
+                <form>
+                    <input type="text" placeholder="Enter Username"><br>
+                    <input type="text" placeholder="Enter Phone Number"><br>
+                    <input type="text" placeholder="Enter Email"><br>
+                    <input type="text" placeholder="Enter BOD"><br>
+                    <textarea placeholder="Enter Address" id="" cols="39" rows="8"></textarea>
+                    <button>Send</button>
+                </form>
+            </div>
         </div>
     </section>
+
+    <a href="#welcome"><button class="topBtn"> ^ </button></a>
+    <footer>Copyright By Lobelia Students</footer>
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 1000,
+            speedAsDuration: true
+        });
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>
